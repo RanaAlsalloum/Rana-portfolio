@@ -1,0 +1,29 @@
+<html>
+  <haed>
+    <title>Message</title>
+    {%include 'bootstrap.html'%}
+  </haed>
+  <body>
+    {%include'banner.html'%}
+
+<h4>Contact me</h4>
+<form action="/message" method="post">
+  <div>
+    <label>Full Name</label><br>
+    <input type="text" name="full_name" placeholder="Rana Alsalloum">
+    
+  </div>
+  <div>
+    <label>E-mail</label><br>
+    <input type="text" name="email" placeholder="rana@gmail.com"">
+
+  </div>
+  <div>
+    <label>Massage</label><br>
+    <textarea type="message" placeholder="Salam I'm Rana Alsalloum">
+    </textarea>
+  </div>
+  <input type="submit">
+  </form>
+  </body>
+</html>
