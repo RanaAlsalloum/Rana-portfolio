@@ -3,14 +3,14 @@ from database import load_projects_from_db,load_project_from_db,add_message_to_d
 app = Flask(__name__)  # first flask app
 
 
-@app.route('/')
+@app.route("/")
 def hello_world():
   projects = load_projects_from_db()
   return render_template('home.html', myskills=projects, myname='Rana')
 
 
 @app.route("/project/<id>")
-def show_project(id):
+def show_projects(id):
   project = load_project_from_db(id)
   return render_template('projectdetails.html', project=project)
 
@@ -26,5 +26,4 @@ def message():
 
 
 if __name__ == "__main__":
-  print("I'm inside the if now")
   app.run(host="0.0.0.0", port=True)  # how to run the app

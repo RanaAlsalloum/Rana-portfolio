@@ -1,10 +1,10 @@
 <html>
   <haed>
     <title>Message</title>
-    {%include 'bootstrap.html'%}
+    {%include'bootstrap.html'%}
   </haed>
   <body>
-    {%include'banner.html'%}
+    {%include 'banner.html'%}
 
 <h4>Contact me</h4>
 <form action="/message" method="post">
@@ -14,13 +14,13 @@
     
   </div>
   <div>
-    <label>E-mail</label><br>
+    <label>Email</label><br>
     <input type="text" name="email" placeholder="rana@gmail.com"">
 
   </div>
   <div>
-    <label>Massage</label><br>
-    <textarea type="message" placeholder="Salam I'm Rana Alsalloum">
+    <label>Message</label><br>
+    <textarea name="message" placeholder="Salam I'm Rana Alsalloum">
     </textarea>
   </div>
   <input type="submit">
